@@ -4,9 +4,9 @@
 <div style="display:inline-block">
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Logo javascript" style="width:80px; height:80px;"/>
 </div>
-
+<br>
 <div>
-<strong>Aula 1 - Criação de um conversor de Moedas.</strong>
-<strong>Aula 2 - Criação do Jogo Mentalize.</strong>
+<strong>Aula 1 - Criação de um conversor de Moedas.</strong><br>
+<strong>Aula 2 - Criação do Jogo Mentalize.</strong><br>
 <strong>Aula 3 - Criação do Alura Flix - Uma pagian de filmes.</strong>
 </div>
