@@ -3,7 +3,7 @@
 #POWERED BY:
 <div style="display:inline-block">
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Logo javascript" style="width:60px; height:60px;"/>
- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/html-plain.svg" alt="Logo Html 5t" style="width:60px; height:60px;"/>
+ <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg)" style="width:60px; height:60px;"/>
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/css-plain.svg" alt="Logo CSS 3" style="width:60px; height:60px;"/>
 </div>
 <br>
