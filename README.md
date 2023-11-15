@@ -2,7 +2,7 @@
 
 #Powered by:
 <div style="display:inline-block">
-  Projeto utilizando HtMl 5, CSS 3 e Javascript.
+ <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Logo javascript"/>
 </div>
 
 # Aula 1 - Criação de um conversor de Moedas.
