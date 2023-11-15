@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    border: 0.5px solid white;
+    /* border: 0.5px solid white; */
 }
 
 :root{
@@ -68,7 +68,7 @@ nav{
 
 .brand img,
 .brand-profdom img{
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -80,4 +80,11 @@ nav{
 
 .brand-profdom{
     width: 197px;    
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 96px;
+    background-image: var(--bck-container);
 }

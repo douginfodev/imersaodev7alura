@@ -1,1 +1,68 @@
 @import '../../css/stylenaster.css';
+
+:root{
+    --bck-aula1: url("../../images/bckmain1.png");
+    --bck-cards: url("../../images/bck-cards.png") 
+}
+
+h1{
+    color: var(--h1-colors);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 750px;
+    padding: 10px;  
+    
+    border-radius: 10px 10px 10px 10px;
+}
+
+.main-aula1{
+    width: 99%;
+    height: 500px;
+    padding: inherit;
+    background-image: var(--bck-aula1);
+}
+
+.main-title-center{
+    width: 99%;
+    height: 70px;
+    padding: inherit;
+    border-radius: inherit;
+    margin-bottom: 10px; 
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
+    background-color: var(--bck-layout);
+}
+
+/* CARDS DESAFIO */
+.main-card-desafio{
+    width: 99%;
+    height: 345px;
+    padding: inherit;
+    border-radius: inherit; 
+
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;  
+    
+    
+}
+
+.cards{
+    width: 585px;
+    height: 325px;
+    padding: inherit;
+    border-radius: 10px 10px 10px 10px;
+    border-color: aquamarine;
+    border: solid 2px;
+    background-image: var(--bck-cards);
+}
+
