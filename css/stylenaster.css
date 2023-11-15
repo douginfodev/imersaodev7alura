@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    border: 1px solid white;
+    border: 0.5px solid white;
 }
 
 :root{
@@ -49,12 +49,20 @@ body{
 header{
     display: flex;
     width: 100%;
-    height: 82px;
+    height: 96px;
     background-image: var(--bck-container);
 }
 
 .brand{
-    width: 250px;
+  width: 250px;
+}
+
+.brand,
+.brand-profdom,
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     height: inherit;
 }
 
@@ -65,16 +73,11 @@ header{
 }
 
 nav{
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
     margin-right: 10px;
-    
     width: 1366px;
-    height: inherit;
 }
 
 .brand-profdom{
-    width: 197px;
-    height: inherit;
+    width: 197px;    
 }
