@@ -1,27 +1,27 @@
 @import '../../css/stylenaster.css';
 
-:root{
+:root {
     --bck-aula1: url("../../images/bckmain1.png");
-    --bck-cards: url("../../images/bck-cards.png") 
+    --bck-cards: url("../../images/bck-cards.png")
 }
 
-h1{
+h1 {
     color: var(--h1-colors);
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     width: 100%;
     height: 750px;
-    padding: 10px;  
-    
+    padding: 10px;
+
     border-radius: 10px 10px 10px 10px;
 }
 
-.main-aula1{
+.main-aula1 {
     display: flex;
     width: 99%;
     height: 500px;
@@ -29,64 +29,111 @@ main{
     background-image: var(--bck-aula1);
 }
 
-.main-aula1-logo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-aula1-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 33%;
-  height: 300px;
+    width: 33%;
+    height: 300px;
 
-  border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
-.main-aula1-logo img{
+.main-aula1-logo img {
     width: 45%;
     height: auto;
 }
 
-.main-aula1-convert{
+.main-aula1-convert {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  
+
     width: 585px;
     height: 300px;
-  
-    border: 1px solid white;
-  }
+
+    /* border: 1px solid white; */
+}
+
+.container-all {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid white; */
+}
+
+.main-aula1-values {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+
+.main-aula1-results{
+    width: 34%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    /* border: 1px solid white; */
+}
+
+.container-all-money {
+    display: flex;
+    justify-content: space-between;
+
+    width: 65%;
+    height: auto;
+    padding: 5px;
+
+    /* border: 1px solid white; */
+}
+
+.container-select-money,
+.money-convert,
+.button-convert,
+.money-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
 
 /* Main Center */
-.main-title-center{
+.main-title-center {
     width: 99%;
     height: 70px;
     padding: inherit;
     border-radius: inherit;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
 
     background-color: var(--bck-layout);
 }
 
 /* CARDS DESAFIO */
-.main-card-desafio{
+.main-card-desafio {
     width: 99%;
     height: 345px;
     padding: inherit;
-    border-radius: inherit; 
+    border-radius: inherit;
 
     display: flex;
-    justify-content: space-around;   
-    align-items: center;  
-    
-    
+    justify-content: space-around;
+    align-items: center;
+
+
 }
 
-.cards{
+.cards {
     width: 585px;
     height: 325px;
     padding: inherit;
@@ -95,4 +142,3 @@ main{
     border: solid 2px;
     background-image: var(--bck-cards);
 }
-

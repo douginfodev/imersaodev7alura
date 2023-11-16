@@ -40,7 +40,7 @@ h1{
     color: var(--h2-colors);
 }
 
-button{
+button,input{
     display: inline-block; 
     font-weight: 700;
     line-height: 1.5;
