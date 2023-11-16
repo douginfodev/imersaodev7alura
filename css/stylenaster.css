@@ -62,6 +62,12 @@ button,input{
     border-color: var(--buttons-colors);  
 }
 
+input{
+    background-image: var(--bck-layout);
+    height: 45px;
+    cursor: default;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
