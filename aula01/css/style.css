@@ -102,6 +102,24 @@ main {
     padding: 10px;
 }
 
+.main-aula1-challenges{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid white;
+}
+
+.challenges-row{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+}
 
 
 /* Main Center */
