@@ -27,6 +27,11 @@ label {
     padding-left: 3px;
     /* font-size: 13px; */
 }
+span.results{
+    color: #19EA5D;
+    font-weight: 700;
+    font-size: 70px;
+}
 
 .main-aula1 {
     display: flex;
@@ -41,14 +46,14 @@ label {
     align-items: center;
     justify-content: center;
 
-    width: 33%;
+    width: 20%;
     height: 300px;
 
     /* border: 1px solid white; */
 }
 
 .main-aula1-logo img {
-    width: 45%;
+    width: 70%;
     height: auto;
 }
 
@@ -57,7 +62,7 @@ label {
     flex-direction: column;
     justify-content: center;
 
-    width: 585px;
+    width: 990px;
     height: 300px;
 
     /* border: 1px solid white; */
@@ -71,11 +76,12 @@ label {
 }
 
 .main-aula1-values {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid white; */
+    align-items: center;
+    /* border: 1px solid white;  */
 }
 
 .main-aula1-results {
@@ -88,13 +94,16 @@ label {
     /* border: 1px solid white; */
 }
 
+/* Select money */
 .container-all-money {
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
-    height: auto;
+    width: 55%;
+    height: 50px;
     padding: 2px;
+
+    /* border: 1px solid white;  */
 }
 
 .container-select-money,
@@ -113,12 +122,14 @@ label {
     width: 48%;
     border: 1px solid white;
     border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
 }
 
 .radio-row {
     display: flex;
-    flex-direction: column;
     font-size: 16px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .rd{
@@ -126,8 +137,15 @@ label {
   font-size: 14px;
 }
 
+.convert-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .main-aula1-challenges {
-    width: 33%;
+    width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -171,11 +189,9 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
 }
 
-.cards {
+.cards{
     width: 585px;
     height: 325px;
     padding: inherit;
