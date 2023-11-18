@@ -27,6 +27,13 @@ label {
     padding-left: 3px;
     /* font-size: 13px; */
 }
+
+p{
+    font-weight: 500;
+    font-size: 20px; 
+    text-align: center; 
+}
+
 span.results{
     color: #19EA5D;
     font-weight: 700;
@@ -149,8 +156,9 @@ span.results{
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
-    border: 1px solid white;
+   
 }
 
 .challenges-row {
@@ -159,8 +167,9 @@ span.results{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+    border: 1px solid white; 
 }
 
 
