@@ -16,7 +16,18 @@ const dolar_euro = 1.00;
 //Onclick Button Convert
 function challengeOne(value) {
     let result = convertMultiply(dolar_real, value).toString(); //Print result in inputText
-    return result; 
+    
+    //Verify radio checked
+    let money1 = document.querySelector('input[name="rdmoney1"]:checked').value;
+    let money2 = document.querySelector('input[name="rdmoney2"]:checked').value;
+   
+    //Verify if different currencies
+    if (money1 === money2){
+      alert('select different currencies');
+      return '0';
+    }  
+
+    return currencySymbol(money1,money2)+' '+result; 
 }
 
 

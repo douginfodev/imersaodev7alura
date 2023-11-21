@@ -179,9 +179,11 @@ span.results{
     margin: 10px;
 }
 
-.rd{
-  /* padding: 5px;  */
+.rd,
+.rd1{
+  display: flex;
   font-size: 14px;
+  align-items: center;
 }
 
 .convert-row{
