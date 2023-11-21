@@ -32,6 +32,17 @@
     font-size: 62.5%;    
 }
 
+a{
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover
+{
+    color: var(--text-colors);
+}
+
 h1{
     color: var(--h1-colors);
 }
