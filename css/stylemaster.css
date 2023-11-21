@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    /* border: 0.5px solid white; */
 }
 
 :root{
@@ -47,7 +46,7 @@ h1{
     color: var(--h1-colors);
 }
 
-h1{
+h2{
     color: var(--h2-colors);
 }
 
@@ -81,6 +80,7 @@ input{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #1E2833;
 }
 
 .container{
@@ -89,6 +89,7 @@ body{
     height: 900px;
     background-image: var(--bck-layout);
     max-width: 1900px;
+    min-width: 1899px;
 }
 
 /* HEADER */
