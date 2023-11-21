@@ -11,7 +11,7 @@
 <strong>Aula 1 - Criação de um conversor de Moedas.</strong><br>
 <strong>Aula 2 - Criação do Jogo Mentalize.</strong><br>
 <strong>Aula 3 e 4 - Criação do Alura Flix - Uma pagina de filmes no estilo da NetFlix.</strong><br>
-<strong>Aula 5 - Classificação em Jogos - Uma pagina comuma tabela de pontuação de jogadores.</strong>
+<strong>Aula 5 - Classificação em Jogos -Criação de uma pagina que contenha uma tabela de pontuação de jogadores.</strong>
 </div>
 
 
