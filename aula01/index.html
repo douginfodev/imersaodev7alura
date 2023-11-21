@@ -51,39 +51,38 @@
                             <div class="container-all-money">
                                 <div class="container-select-money">
                                     <div class="radio-row">
-                                        <div class="rd">
-                                            <input class="rd" type="radio" id="rddolar" name="rdmoney1" value="DOLAR"
-                                                checked>
-                                            <label for="rddolar">DÓLAR</label><br>
+                                        <div class="rd" onclick="currencyLabel('1')">
+                                            <input type="radio" id="rddolar" name="rdmoney1" value="1" checked>
+                                            <label for="rdmoney1">DÓLAR</label><br>
                                         </div>
 
-                                        <div class="rd">
-                                            <input type="radio" id="rdeuro" name="rdmoney1" value="EURO">
+                                        <div class="rd" onclick="currencyLabel('2')">
+                                            <input type="radio" id="rdeuro" name="rdmoney1" value="2">
                                             <label for="rdeuro">EURO</label><br>
                                         </div>
 
-                                        <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdmoney1" value="REAL">
+                                        <div class="rd" onclick="currencyLabel('3')">
+                                            <input type="radio" id="rdreal" name="rdmoney1" value="3">
                                             <label for="rdreal">REAL</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="container-select-money">
-                                    <div class="radio-row">
-                                        <div class="rd">
-                                            <input class="rd" type="radio" id="rddolar2" name="rdmoney2" value="DOLAR">
-                                            <label for="rddolar">DÓLAR</label><br>
+                                    <div class="radio-row1">
+                                        <div class="rd1">
+                                            <input type="radio" id="rddolar2" name="rdmoney2" value="1">
+                                            <label for="rddolar2">DÓLAR</label>
                                         </div>
 
-                                        <div class="rd">
-                                            <input type="radio" id="rdeuro2" name="rdmoney2" value="EURO">
-                                            <label for="rdeuro">EURO</label><br>
+                                        <div class="rd1">
+                                            <input type="radio" id="rdeuro2" name="rdmoney2" value="2">
+                                            <label for="rdeuro2">EURO</label><br>
                                         </div>
 
-                                        <div class="rd">
-                                            <input type="radio" id="rdreal2" name="rdmoney2" value="REAL" checked>
-                                            <label for="rdreal">REAL</label>
+                                        <div class="rd1">
+                                            <input type="radio" id="rdreal2" name="rdmoney2" value="3" checked>
+                                            <label for="rdreal2">REAL</label>
                                         </div>
                                     </div>
                                 </div> <!-- select-money -->
@@ -92,8 +91,9 @@
                             <div class="convert-row">
                                 <div class="money-convert">
                                     <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
+                                    <h1 id="currency" class="inputlabel" for="inputMoedas">US$</h1>
                                     <input id="inputMoedas" type="text" class="form-control" name="inputMoedas" aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-default" placeholder="Digite o valor a converter">
+                                        aria-describedby="inputGroup-sizing-default" placeholder="Digite o valor" min="0" max="9" required>
                                 </div>
 
                                 <div class="button-convert">
@@ -102,8 +102,8 @@
                             </div>
 
                             <div class="main-aula1-results">
-                                <h1 style="text-align:center">VALOR:</h1>
-                                <span id="conversion" class="results">R$ 999,00</span>
+                                <h1 style="text-align:center">SALDO</h1>
+                                <span id="conversion" class="results">0.00</span>
                             </div>
                         </div> <!-- main-aula1-values -->
                     </div> <!-- container-all-->
