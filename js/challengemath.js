@@ -3,6 +3,25 @@ function convertMultiply(moneyValue1, moneyValue2) {
     return results;
 }
 
+function convertDivision(moneyValue1, moneyValue2) {
+    let results = (moneyValue1 / moneyValue2);
+    return results;
+}
+
+function changeDecimalPlaces(value) {
+    let valueCheck = value;//.replace(".",",");
+
+    let results = valueCheck+'00';
+
+    if (valueCheck > 0 && valueCheck < 10)
+      results = valueCheck+'0';
+
+    return results.replace(".",",");
+}
+
+
+
+
 //Change currency symbol
 function currencySymbol(money1, money2) {
     let symbol = money1 + money2;

@@ -1,5 +1,5 @@
 //Challenge #1 - Initial currencies values
-const dolar_real = 5.10;
+const dolar_real = 5.05;
 const euro_real = 5.34;
 const dolar_euro = 0.92;
 
@@ -26,6 +26,7 @@ function challengeOne(value) {
     } else {
 
         let currencyselect = (money1 + '' + money2);
+        
         if (currencyselect == '12' || currencyselect == '21')
             result = convertMultiply(dolar_euro, value).toString(); //Print result in inputText
 
@@ -37,7 +38,7 @@ function challengeOne(value) {
 
     }
 
-    return currencySymbol(money1, money2) + ' ' + result;
+    return currencySymbol(money1, money2) + ' ' + changeDecimalPlaces(result);
 }
 
 
