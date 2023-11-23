@@ -3,6 +3,13 @@ const dolar_real = 5.05;
 const euro_real = 5.34;
 const dolar_euro = 0.92;
 
+//Challenge #2 - Initial bitcoins values
+const ada_real = 1.87;
+const btc_real = 183002.58;
+const eth_real = 9567.37;
+const sol_real = 283.50;
+const trx_real = 0.50;
+const usdt_real= 4.91;
 
 //*** Functions Money Converts *****
 
