@@ -90,10 +90,9 @@
 
                             <div class="convert-row">
                                 <div class="money-convert">
-                                    <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
                                     <h1 id="currency" class="inputlabel" for="inputMoedas">US$</h1>
                                     <input id="inputMoedas" type="text" class="form-control" name="inputMoedas" aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-default" placeholder="Digite o valor" min="0" max="9" required>
+                                        aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR" min="0" max="9" required>
                                 </div>
 
                                 <div class="button-convert">
@@ -112,19 +111,19 @@
                 <div class="main-aula1-challenges">
                     <h1 style="text-align: center;">DESAFIOS</h1>
                     <div class="challenges-row">
-                        <p>Adicionar novas moedas para serem convertidas.</p>
+                        <p>#1 - Adicionar novas moedas para serem convertidas.</p>
                     </div>
 
                     <div class="challenges-row">
-                        <p>Criar um conversor de Ano Luz em Kilômetros(Km)</p>
+                        <p>#2 - Criar um conversor de Criptomoedas -> Real </p>
                     </div>
 
                     <div class="challenges-row">
-                        <p>Criar um conversor de Temperaturas - Fahrenheit, Kelvin e Celsius</p>
+                        <p>#3 - Criar um conversor de Temperaturas - Fahrenheit, Kelvin e Celsius</p>
                     </div>
 
                     <div class="challenges-row">
-                        <p>Criar um conversor de Criptomoedas</p>
+                        <p>#4 - Criar um conversor de Ano Luz -> Kilômetros(Km)</p>
                     </div>
                 </div> <!-- container challenges -->
             </div>
@@ -136,63 +135,69 @@
 
             <div class="main-card-desafio">
                 <div class="cards">
-                    <h1 style="text-align: center;">CONVERSOR DE BITCOIN</h1>
-                    <h2 style="text-align: center;">#Desafio 1</h2>
+                    <h1 style="text-align: center;">CONVERSOR DE CRIPTOMOEDAS -> REAL</h1>
+                    <h2 style="text-align: center;">#Desafio 2</h2>
 
                     <div class="main-aula1-bitcoin">
                         <div class="main-aula1-bitcoin-row"  style="margin-bottom: -10px;">
-                            <div class="container-all-money1">
-                                <div class="container-select-money1">
-                                    <div class="radio-row1">
+                            <div class="container-all-money1" style="width: 100%; display:flex; justify-content: space-between;">
+                                <div class="container-select-money1" style="width: 100%;">
+                                    <div class="radio-row1" style="width: 100%;">
                                         <div class="rd">
-                                            <input class="rd" type="radio" id="rddolar" name="rdmoney1" value="DOLAR"
+                                            <input class="rd" type="radio" id="rddolar" name="rdbitcoin" value="1"
                                                 checked>
-                                            <label for="rddolar">ETH</label><br>
+                                            <label for="rddolar">ADA</label><br>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdeuro" name="rdmoney1" value="EURO">
-                                            <label for="rdeuro">ADA</label><br>
+                                            <input type="radio" id="rdeuro" name="rdbitcoin" value="2">
+                                            <label for="rdeuro">BTC</label><br>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdmoney1" value="REAL">
+                                            <input type="radio" id="rdreal" name="rdbitcoin" value="3">
+                                            <label for="rdreal">ETH</label>
+                                        </div>
+
+                                        <div class="rd">
+                                            <input type="radio" id="rdreal" name="rdbitcoin" value="4">
                                             <label for="rdreal">SOL</label>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdmoney1" value="REAL">
-                                            <label for="rdreal">MRX</label>
+                                            <input type="radio" id="rdreal" name="rdbitcoin" value="5">
+                                            <label for="rdreal">TRX</label>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdmoney1" value="REAL">
-                                            <label for="rdreal">BRL</label>
+                                            <input type="radio" id="rdreal" name="rdbitcoin" value="5">
+                                            <label for="rdreal">USDT</label>
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- all-money 1 -->
                         </div> <!-- main-aula1-bitcoin-row -->
 
-                        <div class="main-aula1-bitcoin-row" style="text-align: center; height: 5px;">
-                            <h2 style="text-align: center;">DIGITE O VALOR A CONVERTER.</h2>
-                         </div> <!-- main-aula1-bitcoin-row -->
+                        <div class="main-aula1-bitcoin-row" style="text-align: center; height: 2px;"> 
+                            <!-- <h2 style="text-align: center;">VALOR A CONVERTER.</h2> -->
+                         </div>
 
                         <div class="convert-row">
                             <div class="money-convert">
+                                <div><img id="bitcoinbrand" src="images/AD.png" alt="Logo da criptomoeda" width="48px" height="48px"/></div>
                                 <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
+                                <input id="inputBitcoins" type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR">
                             </div>
 
                             <div class="button-convert">
-                                <button type="button">CONVERTER</button>
+                                <button type="button" onclick="onClickButton('D2')">CONVERTER</button>
                             </div>
                         </div> <!-- convert-row -->
 
                         <div class="main-aula1-results1">
-                            <h1 style="text-align:center">VALOR:</h1>
-                            <span class="results" style="text-align:center">(BTC) 0,00</span>
+                            <h1 style="text-align:center">SALDO</h1>
+                            <span class="results" style="text-align:center">R$ 0,00</span>
                         </div>
                     </div> <!-- main-aula1-bitcoin -->
                 </div> <!-- main-cards -->
