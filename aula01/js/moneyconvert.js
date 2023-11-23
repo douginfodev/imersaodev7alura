@@ -47,6 +47,7 @@ function challengeOne(value) {
 //Onclick Button Convert
 function challengeTwo(value) {
     let result = 0;
+    let bitcoinDefault = 0;
 
     //Verify radio checked
     let bitcoin = document.querySelector('input[name="rdbitcoin"]:checked').value;
@@ -59,7 +60,7 @@ function challengeTwo(value) {
     } else {
 
         let bitcoinselect = bitcoin;
-        let bitcoinDefault;
+        
 
         switch (bitcoinselect) {
             case '1':
@@ -80,28 +81,29 @@ function challengeTwo(value) {
             case '6':
                 bitcoinDefault = usdt_real;
                 break;
-            default:
-                bitcoinDefault = 0;
         }
     }
 
     result = convertDivision(bitcoinDefault, value).toString(); //Print result in inputText
 
-    return currencySymbolBitcoin(bitcoin) + ' ' + changeDecimalPlaces(result);
+    return changeDecimalPlaces(result);
 }
 
 
 //Onclick Button Convert
 function onClickButton(challenge) {
     let result = 0;
+    let nameChallenge = '0';
 
     switch (challenge) {
         case "D1": //Function Challenge 1
             const valueConvert = document.getElementById("inputMoedas");
+            nameChallenge = 'conversion';
             result = challengeOne(valueConvert.value);
             break;
         case "D2":
             const bitcoinConvert = document.getElementById("inputBitcoins");
+            nameChallenge = 'bitconversion';
             result = challengeTwo(bitcoinConvert.value);
             break;
         case "D3":
@@ -114,7 +116,7 @@ function onClickButton(challenge) {
             alert("Challenge is not found...");
     }
 
-    document.getElementById("conversion").innerHTML = result;
+    document.getElementById(nameChallenge).innerHTML = result;
 
 }
 

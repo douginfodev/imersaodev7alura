@@ -144,18 +144,18 @@
                                 <div class="container-select-money1" style="width: 100%;">
                                     <div class="radio-row1" style="width: 100%;">
                                         <div class="rd">
-                                            <input class="rd" type="radio" id="rddolar" name="rdbitcoin" value="1"
+                                            <input class="rd" onClick="bitcoinBrand('1')" type="radio" id="rddolar" name="rdbitcoin" value="1"
                                                 checked>
                                             <label for="rddolar">ADA</label><br>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdeuro" name="rdbitcoin" value="2">
+                                            <input type="radio" onClick="bitcoinBrand('2')" id="rdeuro" name="rdbitcoin" value="2">
                                             <label for="rdeuro">BTC</label><br>
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdbitcoin" value="3">
+                                            <input type="radio" onClick="bitcoinBrand('3')" id="rdreal" name="rdbitcoin" value="3">
                                             <label for="rdreal">ETH</label>
                                         </div>
 
@@ -170,7 +170,7 @@
                                         </div>
 
                                         <div class="rd">
-                                            <input type="radio" id="rdreal" name="rdbitcoin" value="5">
+                                            <input type="radio" id="rdreal" name="rdbitcoin" value="6">
                                             <label for="rdreal">USDT</label>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@
 
                         <div class="main-aula1-results1">
                             <h1 style="text-align:center">SALDO</h1>
-                            <span class="results" style="text-align:center">R$ 0,00</span>
+                            <span id="bitconversion" class="results" style="text-align:center">R$ 0,00</span>
                         </div>
                     </div> <!-- main-aula1-bitcoin -->
                 </div> <!-- main-cards -->
