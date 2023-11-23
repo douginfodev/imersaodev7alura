@@ -3,19 +3,15 @@ const dolar_real = 5.05;
 const euro_real = 5.34;
 const dolar_euro = 0.92;
 
-//Challenge #2 - Initial bitcoins values
+//Challenge #2 - Bitcoins to real values
 const ada_real = 1.87;
 const btc_real = 183002.58;
 const eth_real = 9567.37;
 const sol_real = 283.50;
 const trx_real = 0.50;
-const usdt_real= 4.91;
+const usdt_real = 4.91;
 
 //*** Functions Money Converts *****
-
-
-
-
 
 
 //Onclick Button Convert
@@ -33,7 +29,7 @@ function challengeOne(value) {
     } else {
 
         let currencyselect = (money1 + '' + money2);
-        
+
         if (currencyselect == '12' || currencyselect == '21')
             result = convertMultiply(dolar_euro, value).toString(); //Print result in inputText
 
@@ -48,6 +44,52 @@ function challengeOne(value) {
     return currencySymbol(money1, money2) + ' ' + changeDecimalPlaces(result);
 }
 
+//Onclick Button Convert
+function challengeTwo(value) {
+    let result = 0;
+
+    //Verify radio checked
+    let bitcoin = document.querySelector('input[name="rdbitcoin"]:checked').value;
+
+
+    //Verify if different currencies
+    if (bitcoin === 0) {
+        alert('Selecione uma criptomoeda');
+        return '0';
+    } else {
+
+        let bitcoinselect = bitcoin;
+        let bitcoinDefault;
+
+        switch (bitcoinselect) {
+            case '1':
+                bitcoinDefault = ada_real;
+                break;
+            case '2':
+                bitcoinDefault = btc_real;
+                break;
+            case '3':
+                bitcoinDefault = eth_real;
+                break;
+            case '4':
+                bitcoinDefault = sol_real;
+                break;
+            case '5':
+                bitcoinDefault = trx_real;
+                break;
+            case '6':
+                bitcoinDefault = usdt_real;
+                break;
+            default:
+                bitcoinDefault = 0;
+        }
+    }
+
+    result = convertDivision(bitcoinDefault, value).toString(); //Print result in inputText
+
+    return currencySymbolBitcoin(bitcoin) + ' ' + changeDecimalPlaces(result);
+}
+
 
 //Onclick Button Convert
 function onClickButton(challenge) {
@@ -59,8 +101,8 @@ function onClickButton(challenge) {
             result = challengeOne(valueConvert.value);
             break;
         case "D2":
-            //   Funcao desafio 2
-            alert("Challenge D1 Clicked");
+            const bitcoinConvert = document.getElementById("inputBitcoins");
+            result = challengeTwo(bitcoinConvert.value);
             break;
         case "D3":
             //   Funcao desafio 3
