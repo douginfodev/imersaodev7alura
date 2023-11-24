@@ -11,6 +11,13 @@ const sol_real = 283.50;
 const trx_real = 0.50;
 const usdt_real = 4.91;
 
+//Challenge #3 - Temperature values
+const celsius_fahre  = 32; //(0 °C × 9/5) + 32 = 32 °F
+const celsius_kelvin = 273.15; //0 °C + 273,15 = 273,15 K
+const kelvin_fahre   = 0; //(1 K − 273,15) × 9/5 + 32 = -457,9 °F
+  
+
+
 //*** Functions Money Converts *****
 
 
@@ -107,7 +114,10 @@ function onClickButton(challenge) {
             result = challengeTwo(bitcoinConvert.value);
             break;
         case "D3":
-            //   Funcao desafio 3
+            const temperatureConvert = document.getElementById("inputTemperature");
+            nameChallenge = 'tempconversion';
+            result = '50';
+            //result = challengeThee(temperatureConvert.value);
             break;
         case "D4":
             //   Funcao desafio 4
