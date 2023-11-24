@@ -19,9 +19,6 @@ function changeDecimalPlaces(value) {
     return results.replace(".", ",");
 }
 
-
-
-
 //Change currency symbol
 function currencySymbol(money1, money2) {
     let symbol = money1 + money2;
@@ -39,7 +36,24 @@ function currencySymbol(money1, money2) {
     }
 }
 
-//Change currency symbol of input text
+//Change temperature symbol
+function temperatureSymbol(temp1, temp2) {
+    let temperature = temp1 + temp2;
+
+    //1 - celsius / 2 - fahre / 3 - Kelvin
+    switch (temperature) {
+        case "12": //Celsius -> Fahre
+            return '° F';
+        case "13":  //Celsius -> Kelvin
+            return '° K';
+        case "21": //Fahre - Celsius
+            return '° C';
+        case "23": //Fahre - Kelvin
+            return '° K';
+    }
+}
+
+//Change currency symbol of Label
 function currencyLabel(option) {
     let label = document.getElementById('currency');
 
