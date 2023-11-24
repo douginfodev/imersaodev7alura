@@ -9,6 +9,7 @@ function convertDivision(moneyValue1, moneyValue2) {
 }
 
 //Challenge 3 - Temperature Convert
+// CELSIUS
 function convertCelsiusFahre(celsius) {
     let results = ((celsius * 1.8) + 32);
     return results.toFixed(2).replace(".",",");
@@ -19,9 +20,26 @@ function convertCelsiusKelvin(celsius) {
     return results.toFixed(2).replace(".",",");
 }
 
+// FAHRENHEIT
 function convertFahreKelvin(fahre) {
     let results = (((fahre - 32) * 0.55555) + 273.15);
-    return results.toFixed(3).replace(".",",");
+    return results.toFixed(3).replace(".",","); 
+}
+
+function convertFahreCelsius(fahre) {
+    let results = ((fahre - 32) * 0.55555);
+    return results.toFixed(3).replace(".",","); 
+}
+
+// KELVIN
+function convertKelvinFahre(kelvin) {
+    let results = (((kelvin - 273.15) * 0.55555) + 32);
+    return results.toFixed(3).replace(".",","); 
+}
+
+function convertKelvinCelsius(kelvin) {
+    let results = (kelvin - 273.15);
+    return results.toFixed(3).replace(".",","); 
 }
 
 function changeDecimalPlaces(value) {
