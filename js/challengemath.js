@@ -9,14 +9,14 @@ function convertDivision(moneyValue1, moneyValue2) {
 }
 
 function changeDecimalPlaces(value) {
-    let valueCheck = value;//.replace(".",",");
+    let valueCheck = value;//.replace(".",","); var a = 1.2345; a.toString().split('.')[1].length
 
-    let results = valueCheck+'00';
+    let results = valueCheck + '00';
 
     if (valueCheck > 0 && valueCheck < 10)
-      results = valueCheck+'0';
+        results = valueCheck + '0';
 
-    return results.replace(".",",");
+    return results.replace(".", ",");
 }
 
 
@@ -52,6 +52,32 @@ function currencyLabel(option) {
             break;
         case "3":
             label.innerHTML = 'R$';
+            break;
+    }
+}
+
+//Change bitcoin brand
+function bitcoinBrand(option) {
+    let imageBrand = document.getElementById('bitcoinbrand');
+
+    switch (option) {
+        case "1":
+            imageBrand.src = '../aula01/images/AD.png';
+            break;
+        case "2":
+            imageBrand.src = '../aula01/images/btn.png';
+            break;
+        case "3":
+            imageBrand.src = '../aula01/images/eth.png';
+            break;
+        case "4":
+            imageBrand.src = '../aula01/images/sol.png';
+            break;
+        case "5":
+            imageBrand.src = '../aula01/images/trx.png';
+            break;
+        case "6":
+            imageBrand.src = '../aula01/images/usdt.png';
             break;
     }
 }
