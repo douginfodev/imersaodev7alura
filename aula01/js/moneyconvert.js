@@ -21,7 +21,7 @@ const kelvin_fahre   = 0; //(1 K − 273,15) × 9/5 + 32 = -457,9 °F
 //*** Functions Money Converts *****
 
 
-//Onclick Button Convert
+//#1 - Challenge One Function
 function challengeOne(value) {
     let result = 0;
 
@@ -51,7 +51,7 @@ function challengeOne(value) {
     return currencySymbol(money1, money2) + ' ' + changeDecimalPlaces(result);
 }
 
-//Onclick Button Convert
+//#2 - Challenge Two Function
 function challengeTwo(value) {
     let result = 0;
     let bitcoinDefault = 0;
@@ -96,6 +96,36 @@ function challengeTwo(value) {
     return changeDecimalPlaces(result);
 }
 
+//Challenge Three Function
+function challengeThree(value) {
+    let result = 0;
+
+    //Verify radio checked
+    let temperature1 = document.querySelector('input[name="rdtemperature1"]:checked').value;
+    let temperature2 = document.querySelector('input[name="rdtemperature2"]:checked').value;
+
+    //Verify if different currencies
+    if (temperature1 === temperature2) {
+        alert('Select different temperatures');
+        return '0';
+    } else {
+
+        let temperatureSelected = (temperature1 + '' + temperature2);
+
+        if (temperatureSelected == '12')
+            result = convertCelsiusFahre(value).toString(); //Print result in inputText
+
+        if (temperatureSelected == '13')
+            result = convertCelsiusKelvin(value).toString(); //Print result in inputText
+
+        if (temperatureSelected == '23')
+            result = convertFahreKelvin(value).toString(); //Print result in inputText
+
+    }
+
+    return result+temperatureSymbol(temperature1, temperature2);
+}
+
 
 //Onclick Button Convert
 function onClickButton(challenge) {
@@ -116,8 +146,7 @@ function onClickButton(challenge) {
         case "D3":
             const temperatureConvert = document.getElementById("inputTemperature");
             nameChallenge = 'tempconversion';
-            result = '50';
-            //result = challengeThee(temperatureConvert.value);
+            result = challengeThree(temperatureConvert.value);
             break;
         case "D4":
             //   Funcao desafio 4
