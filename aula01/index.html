@@ -202,37 +202,74 @@
                     </div> <!-- main-aula1-bitcoin -->
                 </div> <!-- main-cards -->
 
-                <!-- main-cards D2 -->
+                <!-- main-cards D3 -->
                 <div class="cards">
-                    <h1 style="text-align: center;">CONVERSOR DE TEMPERATURA</h1>
-                    <h2 style="text-align: center; margin-bottom: 30px;">#Desafio 2</h2>
+                    <h1 style="text-align: center;">CONVERSOR DE TEMPERATURAS</h1>
+                    <h2 style="text-align: center; margin-bottom: 10px;">#Desafio 3</h2>
 
                     <div class="main-aula1-bitcoin">
 
-                        <div class="main-aula1-bitcoin-row" style="text-align: center; height: 40px;">
-                            <h2 style="text-align: center;">DIGITE O VALOR DA TEMPERATURA</h2>
-                         </div> <!-- main-aula1-bitcoin-row -->
+                        <div class="container-all-money" style="margin-bottom:23px;">
+                            <div class="container-select-money" style="width:92%; height:40px; border:1px solid white;">
+                                <div class="radio-row">
+                                    <div class="rd" onclick="temperatureLabel('1')">
+                                        <input type="radio" id="rddolar" name="rdtemperature1" value="1" checked>
+                                        <label for="rdmoney1">CELSIUS</label><br>
+                                    </div>
+
+                                    <div class="rd" onclick="temperatureLabel('2')">
+                                        <input type="radio" id="rdeuro" name="rdtemperature1" value="2">
+                                        <label for="rdeuro">FAHRENH</label><br>
+                                    </div>
+
+                                    <div class="rd" onclick="temperatureLabel('3')">
+                                        <input type="radio" id="rdreal" name="rdtemperature1" value="3">
+                                        <label for="rdreal">KELVIN</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-select-money" style="width:92%; height:40px; border:1px solid white;">
+                                <div class="radio-row1">
+                                    <div class="rd1" onclick="temperatureLabel('1')">
+                                        <input type="radio" id="rddolar2" name="rdtemperature2" value="1">
+                                        <label for="rddolar2">CELSIUS</label>
+                                    </div>
+
+                                    <div class="rd1" onclick="temperatureLabel('2')">
+                                        <input type="radio" id="rdeuro2" name="rdtemperature2" value="2">
+                                        <label for="rdeuro2">FAHRENH</label><br>
+                                    </div>
+
+                                    <div class="rd1" onclick="temperatureLabel('3')">
+                                        <input type="radio" id="rdreal2" name="rdtemperature2" value="3" checked>
+                                        <label for="rdreal2">KELVIN</label>
+                                    </div>
+                                </div>
+                            </div> <!-- select-money -->
+                        </div> <!-- all-money -->
+  
                        
                         <div class="convert-row">
                             <div class="money-convert">
-                                <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
+                                <h1 id="temperature" class="inputlabel" for="inputMoedas">°C</h1>
+                                <input type="number" id="inputTemperature" class="form-control" name="inputTemperature" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" placeholder="DIGITE A TEMPERATURA">
                             </div>
 
                             <div class="button-convert">
-                                <button type="button">CONVERTER</button>
+                                <button type="button" onclick="onClickButton('D3')">CONVERTER</button>
                             </div>
                         </div> <!-- convert-row -->
 
                         <div class="main-aula1-results1">
-                            <h1 style="text-align:center">VALOR:</h1>
-                            <span class="results" style="text-align:center">(ºC) 45º</span>
+                            <h1 style="text-align:center">TEMPERATURA</h1>
+                            <span id="tempconversion" class="results" style="text-align:center">0°</span>
                         </div>
                     </div> <!-- main-aula1-temperatura -->
                 </div> <!-- main-cards D2 -->
 
-                <!-- main-cards D3 -->
+                <!-- main-cards D4 -->
                 <div class="cards">
                     <h1 style="text-align: center;">CONVERSOR DE ANO LUZ</h1>
                     <h2 style="text-align: center; margin-bottom: 30px;">#Desafio 3</h2>
@@ -264,8 +301,8 @@
         </main>
 
         <footer style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h2>Douglas Ramos = Prof. DOM</h2>
-            <h2>Projeto Desenvolvido - Semana de Imersao Dev  - Alura Cursos</h2>
+            <h2>Douglas Ramos - Prof. DOM/></h2>
+            <h2>Projeto Desenvolvido - Semana de Imersao Dev 7 - Alura Cursos</h2>
             <h3>Novembro 2023</h3>
         </footer>
 
