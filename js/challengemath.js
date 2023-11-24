@@ -8,6 +8,22 @@ function convertDivision(moneyValue1, moneyValue2) {
     return results;
 }
 
+//Challenge 3 - Temperature Convert
+function convertCelsiusFahre(celsius) {
+    let results = ((celsius * 1.8) + 32);
+    return results.toFixed(2).replace(".",",");
+}
+
+function convertCelsiusKelvin(celsius) {
+    let results = (celsius + 273.15);
+    return results.toFixed(2).replace(".",",");
+}
+
+function convertFahreKelvin(fahre) {
+    let results = (((fahre - 32) * 0.55555) + 273.15);
+    return results.toFixed(3).replace(".",",");
+}
+
 function changeDecimalPlaces(value) {
     let valueCheck = value;//.replace(".",","); var a = 1.2345; a.toString().split('.')[1].length
 
@@ -43,13 +59,12 @@ function temperatureSymbol(temp1, temp2) {
     //1 - celsius / 2 - fahre / 3 - Kelvin
     switch (temperature) {
         case "12": //Celsius -> Fahre
-            return '° F';
-        case "13":  //Celsius -> Kelvin
-            return '° K';
+            return '°F';
+        case "13": //Celsius -> Kelvin
+        case "23": //Fahre -> Kelvin
+            return '°K';
         case "21": //Fahre - Celsius
-            return '° C';
-        case "23": //Fahre - Kelvin
-            return '° K';
+            return '°C';
     }
 }
 
@@ -66,6 +81,23 @@ function currencyLabel(option) {
             break;
         case "3":
             label.innerHTML = 'R$';
+            break;
+    }
+}
+
+//Change currency symbol of Label
+function temperatureLabel(option) {
+    let label = document.getElementById('temperature');
+
+    switch (option) {
+        case "1":
+            label.innerHTML = '°C';
+            break;
+        case "2":
+            label.innerHTML = '°F';
+            break;
+        case "3":
+            label.innerHTML = '°K';
             break;
     }
 }
