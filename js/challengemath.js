@@ -12,34 +12,34 @@ function convertDivision(moneyValue1, moneyValue2) {
 // CELSIUS
 function convertCelsiusFahre(celsius) {
     let results = ((celsius * 1.8) + 32);
-    return results.toFixed(2).replace(".",",");
+    return results;
 }
 
 function convertCelsiusKelvin(celsius) {
     let results = (celsius + 273.15);
-    return results.toFixed(2).replace(".",",");
+    return results;
 }
 
 // FAHRENHEIT
 function convertFahreKelvin(fahre) {
     let results = (((fahre - 32) * 0.55555) + 273.15);
-    return results.toFixed(3).replace(".",","); 
+    return results; 
 }
 
 function convertFahreCelsius(fahre) {
     let results = ((fahre - 32) * 0.55555);
-    return results.toFixed(3).replace(".",","); 
+    return results; 
 }
 
 // KELVIN
 function convertKelvinFahre(kelvin) {
     let results = (((kelvin - 273.15) * 0.55555) + 32);
-    return results.toFixed(3).replace(".",","); 
+    return results; 
 }
 
 function convertKelvinCelsius(kelvin) {
     let results = (kelvin - 273.15);
-    return results.toFixed(3).replace(".",","); 
+    return results; 
 }
 
 function changeDecimalPlaces(value) {
@@ -77,11 +77,13 @@ function temperatureSymbol(temp1, temp2) {
     //1 - celsius / 2 - fahre / 3 - Kelvin
     switch (temperature) {
         case "12": //Celsius -> Fahre
+        case "32": //Kelvin -> Fahre
             return '°F';
         case "13": //Celsius -> Kelvin
         case "23": //Fahre -> Kelvin
             return '°K';
         case "21": //Fahre - Celsius
+        case "31": //kelvin - Celsius
             return '°C';
     }
 }
