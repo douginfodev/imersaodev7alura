@@ -11,6 +11,9 @@ const sol_real = 283.50;
 const trx_real = 0.50;
 const usdt_real = 4.91;
 
+//Challenge #4 - Light Year values
+const ligthyear_km = 9.048;
+
 //*** Functions Money Converts *****
 //#1 - Challenge One Function
 function challengeOne(value) {
@@ -107,64 +110,79 @@ function challengeThree(value) {
         switch (temperatureSelected) {
             case '12':
                 resultfixed = convertCelsiusFahre(value);
-                result = resultfixed.toFixed(2).replace('.', ','); 
+                result = resultfixed.toFixed(2).replace('.', ',');
                 break;
-                case '13':
-                    resultfixed = convertCelsiusKelvin(value);
-                    result = resultfixed.toFixed(2).replace('.', ',');
-                    break;
-                case '21':
-                    resultfixed = convertFahreCelsius(value);
-                    result = resultfixed.toFixed(2).replace('.', ',');
-                    break;
-                case '23':
-                    resultfixed = convertFahreKelvin(value);
-                    result = resultfixed.toFixed(2).replace('.', ',');
-                    break;
-                case '31':
-                    resultfixed = convertKelvinCelsius(value);
-                    result = resultfixed.toFixed(2).replace('.', ',');
-                    break;
-                case '32':
-                    resultfixed = convertKelvinFahre(value);
-                    result = resultfixed.toFixed(2).replace('.', ',');
-                    break;
+            case '13':
+                resultfixed = convertCelsiusKelvin(value);
+                result = resultfixed.toFixed(2).replace('.', ',');
+                break;
+            case '21':
+                resultfixed = convertFahreCelsius(value);
+                result = resultfixed.toFixed(2).replace('.', ',');
+                break;
+            case '23':
+                resultfixed = convertFahreKelvin(value);
+                result = resultfixed.toFixed(2).replace('.', ',');
+                break;
+            case '31':
+                resultfixed = convertKelvinCelsius(value);
+                result = resultfixed.toFixed(2).replace('.', ',');
+                break;
+            case '32':
+                resultfixed = convertKelvinFahre(value);
+                result = resultfixed.toFixed(2).replace('.', ',');
+                break;
         }
 
         return result + temperatureSymbol(temperature1, temperature2);
     }
 }
 
+//Challenge Three Function
+function challengeFour(value) {
+    let result = 0;
+    let ligthyear = value;
 
-    //Onclick Button Convert
-    function onClickButton(challenge) {
-        let result = 0;
-        let nameChallenge = '0';
+    if (ligthyear === '') {
+        alert('Enter de value of Light Year');
+        return '0';
+    } else {
+        result = convertMultiply(ligthyear, ligthyear_km);
+        return result;
+    }
+}
 
-        switch (challenge) {
-            case "D1": //Function Challenge 1
-                const valueConvert = document.getElementById("inputMoedas");
-                nameChallenge = 'conversion';
-                result = challengeOne(valueConvert.value);
-                break;
-            case "D2":
-                const bitcoinConvert = document.getElementById("inputBitcoins");
-                nameChallenge = 'bitconversion';
-                result = challengeTwo(bitcoinConvert.value);
-                break;
-            case "D3":
-                const temperatureConvert = document.getElementById("inputTemperature");
-                nameChallenge = 'tempconversion';
-                result = challengeThree(temperatureConvert.value);
-                break;
-            case "D4":
-                //   Funcao desafio 4
-                break;
-            default:
-                alert("Challenge is not found...");
-        }
 
-        document.getElementById(nameChallenge).innerHTML = result;
+//Onclick Button Convert
+function onClickButton(challenge) {
+    let result = 0;
+    let nameChallenge = '0';
 
+    switch (challenge) {
+        case "D1": //Function Challenge 1
+            const valueConvert = document.getElementById("inputMoedas");
+            nameChallenge = 'conversion';
+            result = challengeOne(valueConvert.value);
+            break;
+        case "D2":
+            const bitcoinConvert = document.getElementById("inputBitcoins");
+            nameChallenge = 'bitconversion';
+            result = challengeTwo(bitcoinConvert.value);
+            break;
+        case "D3":
+            const temperatureConvert = document.getElementById("inputTemperature");
+            nameChallenge = 'tempconversion';
+            result = challengeThree(temperatureConvert.value);
+            break;
+        case "D4":
+            const lightyearConvert = document.getElementById("inputLightYear");
+            nameChallenge = 'lightconversion';
+            result = challengeFour(lightyearConvert.value) + ' KM';
+            break;
+        default:
+            alert("Challenge is not found...");
     }
 
+    document.getElementById(nameChallenge).innerHTML = result;
+
+}
