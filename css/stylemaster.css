@@ -78,6 +78,8 @@ input{
     background-image: var(--bck-layout);
     cursor: default;
     margin-left: 10px;
+    color:var(--buttons-colors);
+    font-size: 2.2rem;
 
 }
 
