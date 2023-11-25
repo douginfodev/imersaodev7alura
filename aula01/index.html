@@ -134,6 +134,7 @@
             </div>
 
             <div class="main-card-desafio">
+                <!-- main-cards D2 - Criptomoeda-->
                 <div class="cards">
                     <h1 style="text-align: center;">CONVERSOR DE CRIPTOMOEDAS -> REAL</h1>
                     <h2 style="text-align: center;">#Desafio 2</h2>
@@ -202,7 +203,7 @@
                     </div> <!-- main-aula1-bitcoin -->
                 </div> <!-- main-cards -->
 
-                <!-- main-cards D3 -->
+                <!-- main-cards D3 - Temperatura-->
                 <div class="cards">
                     <h1 style="text-align: center;">CONVERSOR DE TEMPERATURAS</h1>
                     <h2 style="text-align: center; margin-bottom: 10px;">#Desafio 3</h2>
@@ -269,31 +270,30 @@
                     </div> <!-- main-aula1-temperatura -->
                 </div> <!-- main-cards D2 -->
 
-                <!-- main-cards D4 -->
+                <!-- main-cards D4 - Ano Luz -->
                 <div class="cards">
-                    <h1 style="text-align: center;">CONVERSOR DE ANO LUZ</h1>
+                    <h1 style="text-align: center;">CONVERSOR ANO LUZ -> DISTÂNCIA</h1>
                     <h2 style="text-align: center; margin-bottom: 30px;">#Desafio 3</h2>
 
                     <div class="main-aula1-bitcoin">
                         <div class="main-aula1-bitcoin-row" style="text-align: center; height: 40px;">
-                           <h2 style="text-align: center;">DIGITE O VALOR DO ANO LUZ.</h2>
+                           <h2 style="text-align: center;">ANO LUZ</h2>
                         </div> <!-- main-aula1-bitcoin-row -->
 
                         <div class="convert-row">
                             <div class="money-convert">
-                                <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
+                                <input id="lightyear" type="text" class="form-control" aria-label="Sizing example input" name="lightyear"
+                                    aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR">
                             </div>
 
                             <div class="button-convert">
-                                <button type="button">CONVERTER</button>
+                                <button type="button" onclick="onClickButton('D4')">CALCULAR</button>
                             </div>
                         </div> <!-- convert-row -->
 
                         <div class="main-aula1-results1">
-                            <h1 style="text-align:center">VALOR:</h1>
-                            <span class="results" style="text-align:center">(KM) 9.085</span>
+                            <h1 style="text-align:center">DISTÂNCIA</h1>
+                            <span id="ligthyear" class="results" style="text-align:center">0 KM</span>
                         </div>
                     </div> <!-- main-aula1-Ana Luz -->
                 </div> <!-- main-cards D3 -->
