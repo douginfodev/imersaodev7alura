@@ -152,4 +152,20 @@ footer{
     width: 100%;
     height: 96px;
     background-image: var(--bck-container);
+    display: flex;
+}
+
+.footer-links{
+    width: 30%;
+    height: auto;
+    display: flex;
+}
+
+.footer-info{
+    width: 69%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
