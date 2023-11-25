@@ -11,16 +11,7 @@ const sol_real = 283.50;
 const trx_real = 0.50;
 const usdt_real = 4.91;
 
-//Challenge #3 - Temperature values
-const celsius_fahre  = 32; //(0 °C × 9/5) + 32 = 32 °F
-const celsius_kelvin = 273.15; //0 °C + 273,15 = 273,15 K
-const kelvin_fahre   = 0; //(1 K − 273,15) × 9/5 + 32 = -457,9 °F
-  
-
-
 //*** Functions Money Converts *****
-
-
 //#1 - Challenge One Function
 function challengeOne(value) {
     let result = 0;
@@ -67,7 +58,7 @@ function challengeTwo(value) {
     } else {
 
         let bitcoinselect = bitcoin;
-        
+
 
         switch (bitcoinselect) {
             case '1':
@@ -111,51 +102,69 @@ function challengeThree(value) {
     } else {
 
         let temperatureSelected = (temperature1 + '' + temperature2);
+        let resultfixed = 0;
 
-        if (temperatureSelected == '12')
-            result = convertCelsiusFahre(value).toString(); //Print result in inputText
+        switch (temperatureSelected) {
+            case '12':
+                resultfixed = convertCelsiusFahre(value);
+                result = resultfixed.toFixed(2).replace('.', ','); 
+                break;
+                case '13':
+                    resultfixed = convertCelsiusKelvin(value);
+                    result = resultfixed.toFixed(2).replace('.', ',');
+                    break;
+                case '21':
+                    resultfixed = convertFahreCelsius(value);
+                    result = resultfixed.toFixed(2).replace('.', ',');
+                    break;
+                case '23':
+                    resultfixed = convertFahreKelvin(value);
+                    result = resultfixed.toFixed(2).replace('.', ',');
+                    break;
+                case '31':
+                    resultfixed = convertKelvinCelsius(value);
+                    result = resultfixed.toFixed(2).replace('.', ',');
+                    break;
+                case '32':
+                    resultfixed = convertKelvinFahre(value);
+                    result = resultfixed.toFixed(2).replace('.', ',');
+                    break;
+        }
 
-        if (temperatureSelected == '13')
-            result = convertCelsiusKelvin(value).toString(); //Print result in inputText
-
-        if (temperatureSelected == '23')
-            result = convertFahreKelvin(value).toString(); //Print result in inputText
-
+        return result + temperatureSymbol(temperature1, temperature2);
     }
-
-    return result+temperatureSymbol(temperature1, temperature2);
 }
 
 
-//Onclick Button Convert
-function onClickButton(challenge) {
-    let result = 0;
-    let nameChallenge = '0';
+    //Onclick Button Convert
+    function onClickButton(challenge) {
+        let result = 0;
+        let nameChallenge = '0';
 
-    switch (challenge) {
-        case "D1": //Function Challenge 1
-            const valueConvert = document.getElementById("inputMoedas");
-            nameChallenge = 'conversion';
-            result = challengeOne(valueConvert.value);
-            break;
-        case "D2":
-            const bitcoinConvert = document.getElementById("inputBitcoins");
-            nameChallenge = 'bitconversion';
-            result = challengeTwo(bitcoinConvert.value);
-            break;
-        case "D3":
-            const temperatureConvert = document.getElementById("inputTemperature");
-            nameChallenge = 'tempconversion';
-            result = challengeThree(temperatureConvert.value);
-            break;
-        case "D4":
-            //   Funcao desafio 4
-            break;
-        default:
-            alert("Challenge is not found...");
+        switch (challenge) {
+            case "D1": //Function Challenge 1
+                const valueConvert = document.getElementById("inputMoedas");
+                nameChallenge = 'conversion';
+                result = challengeOne(valueConvert.value);
+                break;
+            case "D2":
+                const bitcoinConvert = document.getElementById("inputBitcoins");
+                nameChallenge = 'bitconversion';
+                result = challengeTwo(bitcoinConvert.value);
+                break;
+            case "D3":
+                const temperatureConvert = document.getElementById("inputTemperature");
+                nameChallenge = 'tempconversion';
+                result = challengeThree(temperatureConvert.value);
+                break;
+            case "D4":
+                //   Funcao desafio 4
+                break;
+            default:
+                alert("Challenge is not found...");
+        }
+
+        document.getElementById(nameChallenge).innerHTML = result;
+
     }
-
-    document.getElementById(nameChallenge).innerHTML = result;
-
-}
 
