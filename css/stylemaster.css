@@ -156,16 +156,31 @@ footer{
 }
 
 .footer-links{
-    width: 30%;
+    width: 20%;
     height: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.socialmedia-logo img{
+    width: 70%;
+    height: auto;
 }
 
 .footer-info{
-    width: 69%;
-    height: auto;
+    width: 70%;
+    height:96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info-info{
+    width: 35%;
+    height:auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
