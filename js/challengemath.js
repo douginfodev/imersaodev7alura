@@ -1,3 +1,4 @@
+//***** Challenge 1 - Money Convert *****
 function convertMultiply(moneyValue1, moneyValue2) {
     let results = (moneyValue1 * moneyValue2);
     return results;
@@ -8,7 +9,7 @@ function convertDivision(moneyValue1, moneyValue2) {
     return results;
 }
 
-//Challenge 3 - Temperature Convert
+//***** Challenge 3 - Temperature Convert ******
 // CELSIUS
 function convertCelsiusFahre(celsius) {
     let results = ((celsius * 1.8) + 32);
@@ -59,7 +60,7 @@ function currencySymbol(money1, money2) {
 
     switch (symbol) {
         case "12":
-        case "32":     //Function Challenge 1
+        case "32":     
             return 'E$';
         case "13":
         case "23":
@@ -74,7 +75,7 @@ function currencySymbol(money1, money2) {
 function temperatureSymbol(temp1, temp2) {
     let temperature = temp1 + temp2;
 
-    //1 - celsius / 2 - fahre / 3 - Kelvin
+    //1 - Celsius / 2 - Fahre / 3 - Kelvin
     switch (temperature) {
         case "12": //Celsius -> Fahre
         case "32": //Kelvin -> Fahre
@@ -82,8 +83,8 @@ function temperatureSymbol(temp1, temp2) {
         case "13": //Celsius -> Kelvin
         case "23": //Fahre -> Kelvin
             return '°K';
-        case "21": //Fahre - Celsius
-        case "31": //kelvin - Celsius
+        case "21": //Fahre -> Celsius
+        case "31": //kelvin -> Celsius
             return '°C';
     }
 }
