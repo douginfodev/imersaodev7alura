@@ -7,6 +7,9 @@
         - Euro -> Real
 
 <h2>#2 - WIREFRAME.</h2>
+<div style="display:inline-block">
+ <img src="images/wireframe.png" alt="Wireframe Aula 01"/>
+</div>
 
 <h2>#3 - LAYOUT FINAL.</h2>
 <div style="display:inline-block">
