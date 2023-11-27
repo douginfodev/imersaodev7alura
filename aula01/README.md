@@ -10,12 +10,12 @@
 
 <h2>#3 - LAYOUT FINAL.</h2>
 <div style="display:inline-block">
- <img src="images/desafio1.jpg" alt="Layout Aula 01"/>
+ <img src="images/aula01.png" alt="Layout Aula 01"/>
 </div>
 
 <h2>#4 - FUNCIONALIDADES</h2>
 <ol>
-    <li>Converter moedas entre dolar, euro e real e vice-versa</li>
+    <li>Converter moedas entre dólar, euro e real e vice-versa</li>
     <li>Converter criptomoedas ADA, BTC, ETH, SOL, TRX e USDT para real</li>
     <li>Converter temperaturas Celsius, Fahrenheit, Kelvin e vice-versa</li>
     <li>Converter ano-luz em distância(KM)</li>
