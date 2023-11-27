@@ -129,22 +129,22 @@ function bitcoinBrand(option) {
 
     switch (option) {
         case "1":
-            imageBrand.src = '../aula01/images/AD.png';
+            imageBrand.src = 'images/AD.png';
             break;
         case "2":
-            imageBrand.src = '../aula01/images/btn.png';
+            imageBrand.src = 'images/btn.png';
             break;
         case "3":
-            imageBrand.src = '../aula01/images/eth.png';
+            imageBrand.src = 'images/eth.png';
             break;
         case "4":
-            imageBrand.src = '../aula01/images/sol.png';
+            imageBrand.src = 'images/sol.png';
             break;
         case "5":
-            imageBrand.src = '../aula01/images/trx.png';
+            imageBrand.src = 'images/trx.png';
             break;
         case "6":
-            imageBrand.src = '../aula01/images/usdt.png';
+            imageBrand.src = 'images/usdt.png';
             break;
     }
 }
