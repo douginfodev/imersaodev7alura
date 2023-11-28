@@ -252,3 +252,29 @@ span.results{
     border: solid 2px;
     background-image: var(--bck-cards);
 }
+
+@media only screen and (max-width: 480px){
+  *{
+    border: 2px solid white;
+  }
+
+  footer{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container{
+    width: 100%;
+    height: auto;
+  }
+
+  .main-aula1-logo,
+  .main-aula1-challenges
+  {
+    display:  none;
+  }
+
+}
