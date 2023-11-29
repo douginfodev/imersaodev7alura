@@ -254,9 +254,11 @@ span.results{
 }
 
 @media only screen and (max-width: 480px){
-  *{
-    border: 2px solid white;
-  }
+  *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   } 
 
   footer{
     width: 100%;
@@ -268,13 +270,32 @@ span.results{
 
   .container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
     height: auto;
+    max-width: none;
+    min-width: 320px;
+    padding: 8px;
+  }
+
+  .main-aula1{
+    height:auto;
   }
 
   .main-aula1-logo,
   .main-aula1-challenges
   {
     display:  none;
+  }
+
+  .main-aula1-col2{
+    height: auto;
+  }
+
+  .cards{
+    width: inherit;
+    height: auto;
+    margin-bottom: 10px;
   }
 
 }
