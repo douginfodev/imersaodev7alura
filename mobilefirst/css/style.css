@@ -272,14 +272,21 @@ span.results{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: auto;
+    justify-content: space-between;
+    height: 3000px;
     max-width: none;
     min-width: 320px;
     padding: 8px;
   }
 
   .main-aula1{
-    height:auto;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height:1800px;
+    min-width: 320px;
+    padding: 8px;
+    background-image: none; 
   }
 
   .main-aula1-logo,
@@ -288,14 +295,53 @@ span.results{
     display:  none;
   }
 
-  .main-aula1-col2{
+  .main-aula1-col2,
+  .main-aula1-col3
+  {
+    width: 98%;
     height: auto;
+    min-width: 320px;
   }
 
   .cards{
-    width: inherit;
+    padding-top: 10px;
+    width: 90%;
+    height: 390px;
+    margin-bottom: 20px;
+  }
+
+  .container-all-money{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 98%;
     height: auto;
     margin-bottom: 10px;
+  }
+
+  .container-select-money{
+    width: inherit;
+    height:  30px;
+  }
+
+  .convert-row{
+   display: flex;
+    flex-direction: column;
+    height: auto;
+    width: inherit;
+    margin-bottom: 10px;
+  }
+
+  .money-convert{
+    width: inherit;
+    height:  30px;
+    margin-bottom: 10px;
+  }
+
+  .money-convert input{
+    width: 70%;
+    height:  auto;
+    border: 1px solid white;
   }
 
 }
