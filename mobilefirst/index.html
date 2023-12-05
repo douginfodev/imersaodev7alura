@@ -57,7 +57,7 @@
                     <div class="cards">
                         <h1 style="text-align: center;">CONVERSOR DE MOEDAS</h1>
                         <h2 style="text-align: center;">#Aula 01</h2>
-            
+
                         <!-- block calcule -->
                         <div class="container-all">
                             <div class="main-aula1-values">
@@ -68,31 +68,31 @@
                                                 <input type="radio" id="rddolar" name="rdmoney1" value="1" checked>
                                                 <label style="color: #8AC0A4;" for="rdmoney1">DÓLAR</label><br>
                                             </div>
-            
+
                                             <div class="rd" onclick="currencyLabel('2')">
                                                 <input type="radio" id="rdeuro" name="rdmoney1" value="2">
                                                 <label style="color: #8AC0A4;" for="rdeuro">EURO</label><br>
                                             </div>
-            
+
                                             <div class="rd" onclick="currencyLabel('3')">
                                                 <input type="radio" id="rdreal" name="rdmoney1" value="3">
                                                 <label style="color: #8AC0A4;" for="rdreal">REAL</label>
                                             </div>
                                         </div>
                                     </div>
-            
+
                                     <div class="container-select-money">
                                         <div class="radio-row1">
                                             <div class="rd1">
                                                 <input type="radio" id="rddolar2" name="rdmoney2" value="1">
                                                 <label style="color: #8AC0A4;" for="rddolar2">DÓLAR</label>
                                             </div>
-            
+
                                             <div class="rd1">
                                                 <input type="radio" id="rdeuro2" name="rdmoney2" value="2">
                                                 <label style="color: #8AC0A4;" for="rdeuro2">EURO</label><br>
                                             </div>
-            
+
                                             <div class="rd1">
                                                 <input type="radio" id="rdreal2" name="rdmoney2" value="3" checked>
                                                 <label style="color: #8AC0A4;" for="rdreal2">REAL</label>
@@ -100,20 +100,20 @@
                                         </div>
                                     </div> <!-- select-money -->
                                 </div> <!-- all-money -->
-            
+
                                 <div class="convert-row">
                                     <div class="money-convert">
                                         <h1 id="currency" class="inputlabel" for="inputMoedas">US$</h1>
                                         <input id="inputMoedas" type="number" class="form-control" name="inputMoedas"
-                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                                            placeholder="DIGITE O VALOR">
+                                            aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR">
                                     </div>
-            
+
                                     <div class="button-convert">
                                         <button type="button" onclick="onClickButton('D1')">CONVERTER</button>
                                     </div>
                                 </div>
-            
+
                                 <div class="main-aula1-results">
                                     <h1 style="text-align:center">SALDO</h1>
                                     <span id="conversion" class="results">0.00</span>
@@ -123,184 +123,186 @@
                     </div> <!-- aula1-convert -->
 
                     <div class="cards">
-                        <h1 style="text-align: center;">CONVERSOR DE CRIPTOMOEDAS -> REAL</h1>
+                        <h1 style="text-align: center;">CONVERSOR DE CRIPTOMOEDAS</h1>
                         <h2 style="text-align: center;">#Desafio 2</h2>
-    
+
                         <div class="main-aula1-bitcoin">
                             <div class="main-aula1-bitcoin-row" style="margin-bottom: -10px;">
                                 <div class="container-all-money1"
                                     style="width: 100%; display:flex; justify-content: space-between;">
-                                    <div class="container-select-money1" style="width: 100%;">
-                                        <div class="radio-row1" style="width: 100%;">
+                                    <div id="container-select-m1" class="container-select-money1" style="width: 100%;">
+                                        <div id="radio-row1" class="radio-row1" style="width: 100%;">
                                             <div class="rd">
                                                 <input class="rd" onClick="bitcoinBrand('1')" type="radio" id="rddolar"
                                                     name="rdbitcoin" value="1" checked>
                                                 <label for="rddolar">ADA</label><br>
                                             </div>
-    
+
                                             <div class="rd">
-                                                <input type="radio" onClick="bitcoinBrand('2')" id="rdeuro" name="rdbitcoin"
-                                                    value="2">
+                                                <input type="radio" onClick="bitcoinBrand('2')" id="rdeuro"
+                                                    name="rdbitcoin" value="2">
                                                 <label for="rdeuro">BTC</label><br>
                                             </div>
-    
+
                                             <div class="rd">
-                                                <input type="radio" onClick="bitcoinBrand('3')" id="rdreal" name="rdbitcoin"
-                                                    value="3">
+                                                <input type="radio" onClick="bitcoinBrand('3')" id="rdreal"
+                                                    name="rdbitcoin" value="3">
                                                 <label for="rdreal">ETH</label>
                                             </div>
-    
+
                                             <div class="rd">
-                                                <input type="radio" onClick="bitcoinBrand('4')" id="rdreal" name="rdbitcoin"
-                                                    value="4">
+                                                <input type="radio" onClick="bitcoinBrand('4')" id="rdreal"
+                                                    name="rdbitcoin" value="4">
                                                 <label for="rdreal">SOL</label>
                                             </div>
-    
+
                                             <div class="rd">
-                                                <input type="radio" onClick="bitcoinBrand('5')" id="rdreal" name="rdbitcoin"
-                                                    value="5">
+                                                <input type="radio" onClick="bitcoinBrand('5')" id="rdreal"
+                                                    name="rdbitcoin" value="5">
                                                 <label for="rdreal">TRX</label>
                                             </div>
-    
+
                                             <div class="rd">
-                                                <input type="radio" onClick="bitcoinBrand('6')" id="rdreal" name="rdbitcoin"
-                                                    value="6">
+                                                <input type="radio" onClick="bitcoinBrand('6')" id="rdreal"
+                                                    name="rdbitcoin" value="6">
                                                 <label for="rdreal">USDT</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div> <!-- all-money 1 -->
                             </div> <!-- main-aula1-bitcoin-row -->
-    
+
                             <div class="main-aula1-bitcoin-row" style="text-align: center; height: 2px;">
                                 <!-- <h2 style="text-align: center;">VALOR A CONVERTER.</h2> -->
                             </div>
-    
+
                             <div class="convert-row">
                                 <div class="money-convert">
-                                    <div><img id="bitcoinbrand" src="images/AD.png" alt="Logo da criptomoeda" width="48px"
-                                            height="48px" /></div>
+                                    <div><img id="bitcoinbrand" src="../aula01/images/AD.png" alt="Logo da criptomoeda"
+                                            width="48px" height="48px" /></div>
                                     <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
                                     <input id="inputBitcoins" type="number" class="form-control"
                                         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
                                         placeholder="DIGITE O VALOR">
                                 </div>
-    
+
                                 <div class="button-convert">
                                     <button type="button" onclick="onClickButton('D2')">CONVERTER</button>
                                 </div>
                             </div> <!-- convert-row -->
-    
+
                             <div class="main-aula1-results1">
                                 <h1 style="text-align:center">SALDO</h1>
                                 <span id="bitconversion" class="results" style="text-align:center">R$ 0,00</span>
                             </div>
                         </div> <!-- main-aula1-bitcoin -->
-                    </div> <!-- main-cards -->              
+                    </div> <!-- main-cards -->
                 </div> <!-- main-aula1-col2 -->
 
                 <div class="main-aula1-col3">
-               
-                <!-- main-cards D3 - Temperatura-->
-                <div class="cards">
-                    <h1 style="text-align: center;">CONVERSOR DE TEMPERATURAS</h1>
-                    <h2 style="text-align: center; margin-bottom: 10px;">#Desafio 3</h2>
 
-                    <div class="main-aula1-bitcoin">
+                    <!-- main-cards D3 - Temperatura-->
+                    <div class="cards">
+                        <h1 style="text-align: center;">CONVERSOR DE TEMPERATURAS</h1>
+                        <h2 style="text-align: center; margin-bottom: 10px;">#Desafio 3</h2>
 
-                        <div class="container-all-money" style="margin-bottom:23px;">
-                            <div class="container-select-money" style="width:92%; height:40px; border:1px solid white;">
-                                <div class="radio-row">
-                                    <div class="rd">
-                                        <input type="radio" id="rddolar" onclick="temperatureLabel('1')"
-                                            name="rdtemperature1" value="1" checked>
-                                        <label for="rdmoney1">CELSIUS</label><br>
-                                    </div>
+                        <div class="main-aula1-bitcoin">
 
-                                    <div class="rd">
-                                        <input type="radio" id="rdeuro" onclick="temperatureLabel('2')"
-                                            name="rdtemperature1" value="2">
-                                        <label for="rdeuro">FAHRENH</label><br>
-                                    </div>
+                            <div class="container-all-money" style="margin-bottom:23px;">
+                                <div class="container-select-money"
+                                    style="width:92%; height:40px; border:1px solid white;">
+                                    <div class="radio-row">
+                                        <div class="rd">
+                                            <input type="radio" id="rddolar" onclick="temperatureLabel('1')"
+                                                name="rdtemperature1" value="1" checked>
+                                            <label for="rdmoney1">CELSIUS</label><br>
+                                        </div>
 
-                                    <div class="rd">
-                                        <input type="radio" id="rdreal" onclick="temperatureLabel('3')"
-                                            name="rdtemperature1" value="3">
-                                        <label for="rdreal">KELVIN</label>
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class="rd">
+                                            <input type="radio" id="rdeuro" onclick="temperatureLabel('2')"
+                                                name="rdtemperature1" value="2">
+                                            <label for="rdeuro">FAHRENH</label><br>
+                                        </div>
 
-                            <div class="container-select-money" style="width:92%; height:40px; border:1px solid white;">
-                                <div class="radio-row1">
-                                    <div class="rd1">
-                                        <input type="radio" id="rddolar2" name="rdtemperature2" value="1">
-                                        <label for="rddolar2">CELSIUS</label>
-                                    </div>
-
-                                    <div class="rd1">
-                                        <input type="radio" id="rdeuro2" name="rdtemperature2" value="2">
-                                        <label for="rdeuro2">FAHRENH</label><br>
-                                    </div>
-
-                                    <div class="rd1">
-                                        <input type="radio" id="rdreal2" name="rdtemperature2" value="3" checked>
-                                        <label for="rdreal2">KELVIN</label>
+                                        <div class="rd">
+                                            <input type="radio" id="rdreal" onclick="temperatureLabel('3')"
+                                                name="rdtemperature1" value="3">
+                                            <label for="rdreal">KELVIN</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> <!-- select-money -->
-                        </div> <!-- all-money -->
+
+                                <div class="container-select-money"
+                                    style="width:92%; height:40px; border:1px solid white;">
+                                    <div class="radio-row1">
+                                        <div class="rd1">
+                                            <input type="radio" id="rddolar2" name="rdtemperature2" value="1">
+                                            <label for="rddolar2">CELSIUS</label>
+                                        </div>
+
+                                        <div class="rd1">
+                                            <input type="radio" id="rdeuro2" name="rdtemperature2" value="2">
+                                            <label for="rdeuro2">FAHRENH</label><br>
+                                        </div>
+
+                                        <div class="rd1">
+                                            <input type="radio" id="rdreal2" name="rdtemperature2" value="3" checked>
+                                            <label for="rdreal2">KELVIN</label>
+                                        </div>
+                                    </div>
+                                </div> <!-- select-money -->
+                            </div> <!-- all-money -->
 
 
-                        <div class="convert-row">
-                            <div class="money-convert">
-                                <h1 id="temperature" class="inputlabel" for="inputMoedas">°C</h1>
-                                <input type="number" id="inputTemperature" class="form-control" name="inputTemperature"
-                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                                    placeholder="DIGITE A TEMPERATURA">
+                            <div class="convert-row">
+                                <div class="money-convert">
+                                    <h1 id="temperature" class="inputlabel" for="inputMoedas">°C</h1>
+                                    <input type="number" id="inputTemperature" class="form-control"
+                                        name="inputTemperature" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="DIGITE A TEMPERATURA">
+                                </div>
+
+                                <div class="button-convert">
+                                    <button type="button" onclick="onClickButton('D3')">CONVERTER</button>
+                                </div>
+                            </div> <!-- convert-row -->
+
+                            <div class="main-aula1-results1">
+                                <h1 style="text-align:center">TEMPERATURA</h1>
+                                <span id="tempconversion" class="results" style="text-align:center">0°</span>
                             </div>
+                        </div> <!-- main-aula1-temperatura -->
+                    </div> <!-- main-cards D2 -->
 
-                            <div class="button-convert">
-                                <button type="button" onclick="onClickButton('D3')">CONVERTER</button>
+                    <!-- main-cards D4 - Ano Luz -->
+                    <div class="cards">
+                        <h1 style="text-align: center;">CONVERSOR ANO LUZ</h1>
+                        <h2 style="text-align: center; margin-bottom: 30px;">#Desafio 3</h2>
+
+                        <div class="main-aula1-bitcoin">
+                            <div class="main-aula1-bitcoin-row" style="text-align: center; height: 40px;">
+                                <h2 style="text-align: center;">ANO LUZ</h2>
+                            </div> <!-- main-aula1-bitcoin-row -->
+
+                            <div class="convert-row">
+                                <div class="money-convert">
+                                    <input id="inputLightYear" type="number" class="form-control"
+                                        aria-label="Sizing example input" name="inputLightYear"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR">
+                                </div>
+
+                                <div class="button-convert">
+                                    <button type="button" onclick="onClickButton('D4')">CALCULAR</button>
+                                </div>
+                            </div> <!-- convert-row -->
+
+                            <div class="main-aula1-results1">
+                                <h1 style="text-align:center">DISTÂNCIA</h1>
+                                <span id="lightconversion" class="results" style="text-align:center">0 KM</span>
                             </div>
-                        </div> <!-- convert-row -->
-
-                        <div class="main-aula1-results1">
-                            <h1 style="text-align:center">TEMPERATURA</h1>
-                            <span id="tempconversion" class="results" style="text-align:center">0°</span>
-                        </div>
-                    </div> <!-- main-aula1-temperatura -->
-                </div> <!-- main-cards D2 -->
-
-                <!-- main-cards D4 - Ano Luz -->
-                <div class="cards">
-                    <h1 style="text-align: center;">CONVERSOR ANO LUZ -> DISTÂNCIA</h1>
-                    <h2 style="text-align: center; margin-bottom: 30px;">#Desafio 3</h2>
-
-                    <div class="main-aula1-bitcoin">
-                        <div class="main-aula1-bitcoin-row" style="text-align: center; height: 40px;">
-                            <h2 style="text-align: center;">ANO LUZ</h2>
-                        </div> <!-- main-aula1-bitcoin-row -->
-
-                        <div class="convert-row">
-                            <div class="money-convert">
-                                <input id="inputLightYear" type="number" class="form-control"
-                                    aria-label="Sizing example input" name="inputLightYear"
-                                    aria-describedby="inputGroup-sizing-default" placeholder="DIGITE O VALOR">
-                            </div>
-
-                            <div class="button-convert">
-                                <button type="button" onclick="onClickButton('D4')">CALCULAR</button>
-                            </div>
-                        </div> <!-- convert-row -->
-
-                        <div class="main-aula1-results1">
-                            <h1 style="text-align:center">DISTÂNCIA</h1>
-                            <span id="lightconversion" class="results" style="text-align:center">0 KM</span>
-                        </div>
-                    </div> <!-- main-aula1-Ana Luz -->
-                </div> <!-- main-cards D3 -->
-               </div> 
+                        </div> <!-- main-aula1-Ana Luz -->
+                    </div> <!-- main-cards D3 -->
+                </div>
             </div>
         </main>
 
@@ -308,24 +310,24 @@
             <div class="footer-links">
                 <div class="socialmedia-logo">
                     <a href="https://www.instagram.com/profdomdev/" target="_blank">
-                        <img src="images/instagram80x80.png" alt="Logotipo do Instagram" />
+                        <img src="../aula01/images/instagram80x80.png" alt="Logotipo do Instagram" />
                     </a>
                 </div>
 
                 <div class="socialmedia-logo">
                     <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
-                        <img src="images/logoyoutube.jpg" alt="Logotipo do youtube" />
+                        <img src="../aula01/images/logoyoutube.jpg" alt="Logotipo do youtube" />
                     </a>
                 </div>
 
                 <div class="socialmedia-logo">
                     <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank">
-                        <img src="images/linkedin.png" alt="Logotipo do Linkedin" />
+                        <img src="../aula01/images/linkedin.png" alt="Logotipo do Linkedin" />
                     </a>
                 </div>
                 <div class="socialmedia-logo">
                     <a href="https://github.com/douginfodev" target="_blank">
-                        <img src="images/logogit.png" alt="Logo do repositorio GitHub" />
+                        <img src="../aula01/images/logogit.png" alt="Logo do repositorio GitHub" />
                     </a>
                 </div>
             </div>
@@ -338,76 +340,6 @@
                 </div>
             </div>
         </footer>
-
-        <div class="cards">
-            <h1 style="text-align: center;">CONVERSOR DE MOEDAS</h1>
-            <h2 style="text-align: center;">#Aula 01</h2>
-
-            <!-- block calcule -->
-            <div class="container-all">
-                <div class="main-aula1-values">
-                    <div class="container-all-money">
-                        <div class="container-select-money">
-                            <div class="radio-row">
-                                <div class="rd" onclick="currencyLabel('1')">
-                                    <input type="radio" id="rddolar" name="rdmoney1" value="1" checked>
-                                    <label style="color: #8AC0A4;" for="rdmoney1">DÓLAR</label><br>
-                                </div>
-
-                                <div class="rd" onclick="currencyLabel('2')">
-                                    <input type="radio" id="rdeuro" name="rdmoney1" value="2">
-                                    <label style="color: #8AC0A4;" for="rdeuro">EURO</label><br>
-                                </div>
-
-                                <div class="rd" onclick="currencyLabel('3')">
-                                    <input type="radio" id="rdreal" name="rdmoney1" value="3">
-                                    <label style="color: #8AC0A4;" for="rdreal">REAL</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-select-money">
-                            <div class="radio-row1">
-                                <div class="rd1">
-                                    <input type="radio" id="rddolar2" name="rdmoney2" value="1">
-                                    <label style="color: #8AC0A4;" for="rddolar2">DÓLAR</label>
-                                </div>
-
-                                <div class="rd1">
-                                    <input type="radio" id="rdeuro2" name="rdmoney2" value="2">
-                                    <label style="color: #8AC0A4;" for="rdeuro2">EURO</label><br>
-                                </div>
-
-                                <div class="rd1">
-                                    <input type="radio" id="rdreal2" name="rdmoney2" value="3" checked>
-                                    <label style="color: #8AC0A4;" for="rdreal2">REAL</label>
-                                </div>
-                            </div>
-                        </div> <!-- select-money -->
-                    </div> <!-- all-money -->
-
-                    <div class="convert-row">
-                        <div class="money-convert">
-                            <h1 id="currency" class="inputlabel" for="inputMoedas">US$</h1>
-                            <input id="inputMoedas" type="number" class="form-control" name="inputMoedas"
-                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                                placeholder="DIGITE O VALOR">
-                        </div>
-
-                        <div class="button-convert">
-                            <button type="button" onclick="onClickButton('D1')">CONVERTER</button>
-                        </div>
-                    </div>
-
-                    <div class="main-aula1-results">
-                        <h1 style="text-align:center">SALDO</h1>
-                        <span id="conversion" class="results">0.00</span>
-                    </div>
-                </div> <!-- main-aula1-values -->
-            </div> <!-- container-all-->
-        </div> <!-- aula1-convert -->
-
-
     </div>
     <script src="../js/challengemath.js"></script>
     <script src="js/moneyconvert.js"></script>
